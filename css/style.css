@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  transform: translate(-50%, 0);
+  background-image: url('../img/embreve-victoralen.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  .main .sociais {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+    .main .sociais .item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      color: #000000;
+      background: #FFFFFF;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      transition: all 250ms linear;
+    }
+      .main .sociais .item + .item {
+        margin-left: 5px;
+      }
+      .main .sociais .item:hover { color: #FFFFFF }
+      .main .sociais .item.fa-youtube-play:hover { background-color: #e52c27 }
+      .main .sociais .item.fa-facebook:hover { background-color: #3b5998 }
+      .main .sociais .item.fa-instagram:hover { background-color: #a47058 }
