@@ -11,6 +11,7 @@ body {
   height: 100%;
   color: #FFFFFF;
   background-color: #000000;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -27,6 +28,24 @@ body {
   background-repeat: no-repeat;
 }
 
+  /* informations */
+  .main .info {
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    margin-right: -150px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+    .main .info a {
+      display: block;
+      font-size: 1.3em;
+      padding-top: 10px;
+      color: #F4C0AF;
+    }
+
+  /* sociais */
   .main .sociais {
     position: absolute;
     right: 30px;
@@ -51,3 +70,28 @@ body {
       .main .sociais .item.fa-youtube-play:hover { background-color: #e52c27 }
       .main .sociais .item.fa-facebook:hover { background-color: #3b5998 }
       .main .sociais .item.fa-instagram:hover { background-color: #a47058 }
+
+
+@media screen and (max-width: 670px) {
+  .main .info {
+    bottom: 90px;
+  }
+
+  .main .sociais {
+    right: 50%;
+    margin-right: -75px;
+    width: 150px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main .info {
+    font-size: 1em;
+    bottom: 70px;
+  }
+
+  .main .sociais {
+    bottom: 15px;
+  }
+}
